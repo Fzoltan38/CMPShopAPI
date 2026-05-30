@@ -2,6 +2,7 @@ namespace ComputerShopApi
 {
     public class WeatherForecast
     {
+        //Minta
         public DateOnly Date { get; set; }
 
         public int TemperatureC { get; set; }
