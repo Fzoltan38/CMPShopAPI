@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "ContainingType": "ComputerShopApi.Controllers.ComputersController",
+    "Method": "AddNewComputer",
+    "RelativePath": "computer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addComputerDto",
+        "Type": "ComputerShopApi.Models.AddComputerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShopApi.Controllers.ComputersController",
+    "Method": "GetAllComputer",
+    "RelativePath": "computer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShopApi.Controllers.ComputersController",
+    "Method": "DeleteByIdComputer",
+    "RelativePath": "computer",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShopApi.Controllers.ComputersController",
+    "Method": "UpdateComputer",
+    "RelativePath": "computer",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateComputerDto",
+        "Type": "ComputerShopApi.Models.UpdateComputerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShopApi.Controllers.ComputersController",
+    "Method": "GetByIdComputer",
+    "RelativePath": "computer/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

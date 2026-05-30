@@ -3,6 +3,7 @@ using System;
 using ComputerShopApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ComputerShopApi.Migrations
 {
     [DbContext(typeof(CmpShopDbContext))]
-    partial class CmpShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260530103017_AddUpdatedFiledFix")]
+    partial class AddUpdatedFiledFix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -9,5 +9,6 @@ namespace ComputerShopApi.Models
         public string? Type { get; set; }
         public double Display { get; set; }
         public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
     }
 }
