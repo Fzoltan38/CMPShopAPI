@@ -10,7 +10,18 @@ namespace ComputerShopApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContext<CmpShopDbContext>();
+            //builder.Services.AddDbContext<CmpShopDbContext>();
+
+            /*
+                builder.Services.AddCors(c => 
+                    { 
+                        c.AddPolicy("AllowOrigin", options => 
+                        options
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader()); 
+                    });
+             */
 
             // Add services to the container.
 
@@ -19,6 +30,14 @@ namespace ComputerShopApi
             builder.Services.AddOpenApi();
 
             var app = builder.Build();
+
+            /*
+              app.UseCors(options => 
+                options
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+             */
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
