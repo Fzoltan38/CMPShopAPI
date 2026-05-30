@@ -1,4 +1,5 @@
 
+using ComputerShopApi.Models;
 using Scalar.AspNetCore;
 
 namespace ComputerShopApi
@@ -8,6 +9,8 @@ namespace ComputerShopApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<CmpShopDbContext>();
 
             // Add services to the container.
 
