@@ -1,4 +1,6 @@
 
+using Scalar.AspNetCore;
+
 namespace ComputerShopApi
 {
     public class Program
@@ -19,6 +21,7 @@ namespace ComputerShopApi
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+                app.MapScalarApiReference();
             }
 
             app.UseHttpsRedirection();
